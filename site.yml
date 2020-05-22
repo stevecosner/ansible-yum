@@ -1,0 +1,12 @@
+---
+
+- name: update yum - get info
+
+  hosts: servers
+  become: yes
+  remote_user: steve
+  
+  roles:
+    - common
+#    - show
+#   - install
