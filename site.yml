@@ -1,12 +1,12 @@
 ---
 
-- name: update yum - get info
+- name: Site play
 
   hosts: servers
-  become: yes
-  remote_user: steve
+#  become: yes
+  remote_user: root
   
   roles:
-    - common
+    - update
 #    - show
-#   - install
+#    - install

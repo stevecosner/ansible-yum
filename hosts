@@ -9,12 +9,9 @@
 #   - A hostname/ip can be a member of multiple groups
 
 [servers]
-c1 ansible_host=10.1.1.70 ansible_ssh_private_key_file=~/.ssh/id_rsa_msa
+c1 ansible_host=10.1.1.22 ansible_ssh_private_key_file=~/.ssh/id_rsa_msa ansible_python_interpreter=/usr/bin/python2
 
 
-[awsdev]
-ec2-1 ansible_host=1.1.1.1 ansible_ssh_private_key_file=~/.ssh/id_rsa
-ec2-2 ansible_host=2.2.2.2 ansible_ssh_private_key_file=~/.ssh/id_rsa
 #green.example.com
 #blue.example.com
 #192.168.100.1
